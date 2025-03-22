@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayra Gonzalez Martinez</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="formulario.js" type="text/JavaScript"></script> 
+</head>    
+<body>
+    <header>
+        <img src="wave-1.svg">
+        <img src="wave-2.svg">
+        <img src="wave-3.svg">
+        <img src="wave-4.svg">
+        <img src="wave-5.svg" id="shape">
+        <h1>Mayra González Martínez</h1>
+        <h2>Computer Science</h2>
+    </header>
+
+    <section class="about">
+        <p>I am currently studying at Tecnológico de Monterrey and blah blah blah</p>    
+    </section>
+
+    <section class="projects">
+        <h2>- Projects -</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="project1.png" alt="Project 1">
+                <div class="card-content">
+                    <h3>Mayra's Luxury Motors</h3>
+                    <p>Sitio de compra/venta de carros de lujo</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="project2.jpg" alt="Project 2">
+                <div class="card-content">
+                    <h3>Proyecto 2</h3>
+                    <p>grapert</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="project3.jpg" alt="Project 3">
+                <div class="card-content">
+                    <h3>Proyecto 3</h3>
+                    <p>No tengo más proyectos lolol</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>📩 Contact Me</h2>
+        <p>Fill out this form so I can reach you</p>
+        <form id="contactForm">
+            <div class="input-group">
+                <label for="nombre">Name</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Your Name">
+            </div>
+            <div class="input-group">
+                <label for="correo">Mail</label>
+                <input type="email" id="correo" name="correo" placeholder="Your Email">
+            </div>
+            <div class="input-group">
+                <label for="mensaje">Message</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Write your message..."></textarea>
+            </div>
+            <button type="button" onclick="ejecutar()">Send</button>
+        </form>
+        
+    </section>
+</body>        
+</html>

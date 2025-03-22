@@ -1,0 +1,284 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+header {
+    height:100vh;
+    /*background-color: #f8369d;*/
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #6b73ff, #000dff);
+    position: relative;
+    padding: 50px 0; 
+}
+
+#shape {
+    position: absolute;
+    bottom: -2vw;
+}
+
+img:not(#shape) {
+    position: absolute;
+    left:0;
+}
+
+header img:nth-child(1) {
+    opacity: 0.4;
+    bottom: -0.1vw;
+    animation: move-1 5s infinite;
+}
+
+@keyframes move-1 {
+    50% {
+        transform: translateY(15px);
+    }
+}
+
+header img:nth-child(2) {
+    opacity: 0.3;
+    bottom: 0.5vw;
+    animation: move-2 4s infinite;
+}
+
+@keyframes move-2 {
+    50% {
+        transform: translateY(35px);
+    }
+}
+
+header img:nth-child(3) {
+    opacity: 0.2;
+    bottom: 0.3vw;
+    animation: move-3 3.5s infinite;
+}
+
+@keyframes move-3 {
+    50% {
+        transform: translateY(25px);
+    }
+}
+
+header img:nth-child(4) {
+    opacity: 0.3;
+    bottom: 0.1vw;
+    animation: move-4 3s infinite;
+}
+
+@keyframes move-4 {
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+header h1 {
+    font-family: sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 8vmin;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+}
+
+header h2 {
+    font-family: sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vmin;
+    text-align: center;
+    color: #5e0434;
+    white-space: nowrap; 
+}
+
+
+section p {
+    font-family: sans-serif;
+    padding: 30px 35px;
+    margin-top: 50px;
+    text-align: justify;
+    line-height: 2em;
+    letter-spacing: 0.5px;
+    
+}
+
+.projects {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.projects h2::before,
+.projects h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    top: 50%;
+}
+
+.projects h2::before {
+    left: -60px;
+}
+
+.projects h2::after {
+    right: -60px;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    width: 250px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.card-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+
+.card:hover .card-content {
+    top: 0;
+    opacity: 1;
+}
+
+.campo{
+	background:white;
+	color:black;
+	font-size:16pt;
+	font-weight:normal;
+	border-radius:10px;
+	text-align:left;
+	font-family:"Rosario", sans-serif
+
+}
+
+.about {
+    padding: 40px 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.contact {
+    background: #6b73ff;
+    color: white;
+    padding: 50px 20px;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    width: 80%;
+    max-width: 400px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background: white;
+    color: #6b73ff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #fff2;
+    color: white;
+}
